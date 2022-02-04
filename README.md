@@ -1,7 +1,36 @@
-# MotorCortex Subtitles
+# MotorCortex-Subtitles
 
-[Subtitle](https://www.npmjs.com/package/subtitle) library as a MotorCortex Incident
+**Table of Contents**
 
+- [MotorCortex-Subtitles](#motorcortex-subtitles)
+  - [Demo](#demo)
+- [Intro / Features](#intro--features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Importing and Loading](#importing-and-loading)
+- [Creating Incidents](#creating-incidents)
+  - [ParseText](#parsetext)
+- [Adding Incidents in your clip](#adding-incidents-in-your-clip)
+- [Contributing](#contributing)
+- [License](#license)
+- [Sponsored by](#sponsored-by)
+
+## Demo
+
+[Check it out here](https://donkeyclip.github.io/motorcortex-subtitles/demo/)
+
+# Intro / Features
+
+MotorCortex Subtitles takes the capabilities of [Subtitle](https://www.npmjs.com/package/subtitle) library of parsing subtilte files. 
+The `ParseText` Incident can parse supported subtitle files and add them to your clip. The duration is auto calculated from your subtitles. 
+
+This Plugin exposes just one Incident:
+- ParseText
+
+## Subtitle Formats supported
+SRT or WebVTT
+
+# Getting Started
 ## Installation
 ```bash
 $ npm install @donkeyclip/motorcortex-subtitles
@@ -9,25 +38,17 @@ $ npm install @donkeyclip/motorcortex-subtitles
 $ yarn add @donkeyclip/motorcortex-subtitles
 ```
 
+## Importing and loading
 ```javascript
-import Subtitle from "@donkeyclip/motorcortex-subtitles";
+import { loadPlugin } from "@donkeyclip/motorcortex/";
+import SubtitleDef from "@donkeyclip/motorcortex-subtitles";
+const SubtitlePlugin = loadPlugin(SubtitleDef);
 ```
 
+# Creating Incidents
 
-## Key Concepts / Features
-MotorCortex Subtitles takes the capabilities of Subtitle library of parsing subtilte files. 
-The library exposes just one Incident with the name "ParseText" which can parse supported subtitle files and add them to your clip. The duration is auto calculated from your subtitles. The container params of the subtitles clip should be the same with the parent clip.
-
-## Subtitle Formats supported
-SRT or WebVTT
-
-## Documentation
-### Import and load the plugin to MotorCortex
+## ParseText
 ```javascript
-import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex/";
-import mySubsTextFile from "./subs.srt.js";
-import SubtitlesDefinition from "@donkeyclip/motorcortex-subtitles/";
-const Subtitles = loadPlugin(SubtitlesDefinition);
 const clip = new HTMLClip({
   html: `
     <div class="container"></div>`,
@@ -64,11 +85,8 @@ const subtitle = new Subtitles.ParseText(
     },
   }
 );
-
-clip.addIncident(subtitle, 0);
-clip.play();
 ```
-### Attributes
+### ParseText Attrs
 | Name | Description | Default | Type |
 | --------- |:-----------| :----| ------: |
 | fontSize | Font size in pixels of the subtitles | 12 | number |
@@ -80,13 +98,27 @@ clip.play();
 | paddingTop | The padding top value of the subtitles container in pixels | 0 | number |
 | paddingBottom | The padding bottom value of the subtitles container in pixels | 0 | number |
 
-### Demo
-https://donkeyclip.github.io/motorcortex-subtitles/demo/
+#### IMPORTANT 
+The container params of the subtitles clip should be the same with the parent clip.
 
+# Adding Incidents in your clip
 
-## License
+```javascript
+clipName.addIncident(incidentName,startTime);
+```
+
+### Contributing 
+
+In general, we follow the "fork-and-pull" Git workflow, so if you want to submit patches and additions you should follow the next steps:
+1.	**Fork** the repo on GitHub
+2.	**Clone** the project to your own machine
+3.	**Commit** changes to your own branch
+4.	**Push** your work back up to your fork
+5.	Submit a **Pull request** so that we can review your changes
+
+# License
+
 [MIT License](https://opensource.org/licenses/MIT)
 
-  
-  
-[![Kiss My Button](https://presskit.kissmybutton.gr/logos/kissmybutton-logo-small.png)](https://kissmybutton.gr)
+# Sponsored by
+[<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
