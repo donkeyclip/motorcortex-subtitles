@@ -21,8 +21,8 @@
 
 # Intro / Features
 
-MotorCortex Subtitles takes the capabilities of [Subtitle](https://www.npmjs.com/package/subtitle) library of parsing subtilte files. 
-The `ParseText` Incident can parse supported subtitle files and add them to your clip. The duration is auto calculated from your subtitles. 
+MotorCortex Subtitles takes the capabilities of the [Subtitle](https://www.npmjs.com/package/subtitle) library of parsing subtitle files. 
+The `ParseText` Incident can parse supported subtitle files and add them to your clip. The duration is auto-calculated from your subtitles. 
 
 This Plugin exposes just one Incident:
 - ParseText
@@ -99,7 +99,7 @@ const subtitle = new Subtitles.ParseText(
 | paddingBottom | The padding bottom value of the subtitles container in pixels | 0 | number |
 
 #### IMPORTANT 
-The container params of the subtitles clip should be the same with the parent clip.
+The container params of the subtitles clip should be the same as the parent clip.
 
 # Adding Incidents in your clip
 
