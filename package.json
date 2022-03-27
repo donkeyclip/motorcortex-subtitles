@@ -65,7 +65,7 @@
     "browserslist": "4.20.2",
     "caniuse-lite": "1.0.30001320",
     "commitizen": "4.2.4",
-    "concurrently": "6.3.0",
+    "concurrently": "6.5.1",
     "core-js": "3.18.3",
     "css-loader": "6.4.0",
     "cz-conventional-changelog": "3.3.0",
