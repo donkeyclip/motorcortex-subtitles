@@ -5,7 +5,7 @@
   "main": "dist/motorcortex-subtitles.cjs.js",
   "module": "dist/motorcortex-subtitles.esm.js",
   "browser": "dist/motorcortex-subtitles.umd.js",
-  "author": "KissMyButton PC (kissmybutton.gr) <opensource@kissmybutton.gr>",
+  "author": "Donkeyclip (donkeyclip.com) <opensource@donkeyclip.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/donkeyclip/motorcortex-subtitles.git"
