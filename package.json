@@ -6,7 +6,10 @@
   "module": "dist/motorcortex-subtitles.esm.js",
   "browser": "dist/motorcortex-subtitles.umd.js",
   "files": [
-    "dist"
+    "dist",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENCE"
   ],
   "author": "Donkeyclip (donkeyclip.com) <opensource@donkeyclip.com>",
   "repository": {
