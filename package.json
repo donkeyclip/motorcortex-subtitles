@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-subtitles",
-  "version": "3.0.4",
+  "version": "0.0.1",
   "description": "Subtitles plugin for MotorCortex",
   "main": "dist/motorcortex-subtitles.cjs.js",
   "module": "dist/motorcortex-subtitles.esm.js",
