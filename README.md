@@ -19,7 +19,7 @@ MotorCortex Subtitles takes the capabilities of Subtitle library of parsing subt
 The library exposes just one Incident with the name "ParseText" which can parse supported subtitle files and add them to your clip. The duration is auto calculated from your subtitles. The container params of the subtitles clip should be the same with the parent clip.
 
 ## Subtitle Formats supported
-SRT or WebVTT
+SRT
 
 ## Documentation
 ### Import and load the plugin to MotorCortex
