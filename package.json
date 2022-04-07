@@ -32,9 +32,8 @@
   },
   "keywords": [
     "motorcortex",
-    "openlayers",
-    "ol",
-    "map"
+    "subtitles",
+    "motorcortex-plugin"
   ],
   "lint-staged": {
     "*.{json,md,yml,yaml,css}": [
