@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.0.5](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.0.4...v3.0.5) (2022-04-07)
+
+
+### Bug Fixes
+
+* upload missing files to npm repo ([b4b05af](https://www.github.com/donkeyclip/motorcortex-subtitles/commit/b4b05afdca461818fc7e85fbb8502c6114328950))
+
 ### [3.0.4](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.0.3...v3.0.4) (2022-04-07)
 
 
