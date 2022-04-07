@@ -1,10 +1,8 @@
-/*!
- * The buffer module from node.js, for the browser.
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
+/**
+ * @name parseSRT
+ * @desc Parses and converts SRT subtitle data into JSON format. Adapted from the popcorn.js SRT parser plugin.
+ * @see http://popcornjs.org/
+ * @author Luis Rodrigues (http://www.luisrodriguesweb.com)
+ * @version 1.0.0-alpha
+ * @license MIT
  */
-
-/*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
-
-/*! safe-buffer. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
