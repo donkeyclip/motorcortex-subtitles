@@ -1,6 +1,5 @@
 import conf from "../package.json";
 import { ParseText } from "./ParseText";
-// console.log(conf);
 export default {
   npm_name: conf.name,
   version: conf.version,

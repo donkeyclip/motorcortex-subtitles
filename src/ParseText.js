@@ -74,7 +74,6 @@ export class ParseText extends HTMLClip {
   buildTree() {
     try {
       const subs = parseSRT(this.attrs.subtitles);
-      // eslint-disable-next-line no-console
       const subtitle = new ParseTextPlugin.ParseTextIncident(
         {
           animatedAttrs: {
