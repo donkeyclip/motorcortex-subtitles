@@ -1,15 +1,14 @@
 import { Effect, HTMLClip, loadPlugin } from "@donkeyclip/motorcortex";
-import { parseSync } from "subtitle";
-
+import parseSRT from "parse-srt";
 /*INNER PLUGIN*/
 class ParseTextIncident extends Effect {
   getScratchValue() {
     return "";
   }
-  onProgress(fraction, currentTime) {
+  onProgress(currentTime) {
     for (const i in this.targetValue) {
-      const { start, end, text } = this.targetValue[i].data;
-      if (currentTime >= start && currentTime < end) {
+      const { start, end, text } = this.targetValue[i];
+      if (currentTime >= start * 1000 && currentTime < end * 1000) {
         this.element.innerHTML = text;
         break;
       } else {
@@ -26,16 +25,6 @@ const parseTextDefinition = {
     {
       exportable: ParseTextIncident,
       name: "ParseTextIncident",
-      attributesValidationRules: {
-        animatedAttrs: {
-          type: "object",
-          props: {
-            subsArray: {
-              type: "array",
-            },
-          },
-        },
-      },
     },
   ],
 };
@@ -84,7 +73,8 @@ export class ParseText extends HTMLClip {
 
   buildTree() {
     try {
-      const subs = parseSync(this.attrs.subtitles);
+      const subs = parseSRT(this.attrs.subtitles);
+      // eslint-disable-next-line no-console
       const subtitle = new ParseTextPlugin.ParseTextIncident(
         {
           animatedAttrs: {
@@ -92,7 +82,7 @@ export class ParseText extends HTMLClip {
           },
         },
         {
-          duration: subs[subs.length - 1].data.end,
+          duration: subs[subs.length - 1].end * 1000,
           selector: "#subs-container",
         }
       );

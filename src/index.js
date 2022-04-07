@@ -1,9 +1,9 @@
-import { name, version } from "../package.json";
+import conf from "../package.json";
 import { ParseText } from "./ParseText";
-
+// console.log(conf);
 export default {
-  npm_name: name,
-  version: version,
+  npm_name: conf.name,
+  version: conf.version,
   incidents: [
     {
       exportable: ParseText,
