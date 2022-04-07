@@ -1,6 +1,6 @@
 import { HTMLClip, loadPlugin } from "@donkeyclip/motorcortex";
 import Player from "@donkeyclip/motorcortex-player";
-import SubtitlesDefinition from "../dist/motorcortex-subtitles.esm";
+import SubtitlesDefinition from "../src";
 import { subs } from "./subs.srt.js";
 const Subtitles = loadPlugin(SubtitlesDefinition);
 
@@ -45,9 +45,5 @@ const subtitle = new Subtitles.ParseText(
 
 clip.addIncident(subtitle, 0);
 new Player({
-  scaleToFit: true,
   clip: clip,
-  theme: "mc-blue",
-  preview: true,
-  pointerEvents: true,
 });
