@@ -1,5 +1,18 @@
 # Changelog
 
+## [3.1.0](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.0.4...v3.1.0) (2022-04-08)
+
+
+### Features
+
+* drop explorer 11 support ([8ac6b7d](https://www.github.com/donkeyclip/motorcortex-subtitles/commit/8ac6b7d3eac40661122210db260ce576e41ac9e9))
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([bba521f](https://www.github.com/donkeyclip/motorcortex-subtitles/commit/bba521f6cc8e0767caf9df42d94444ebcfeb8a7e))
+* upload missing files to npm repo ([b4b05af](https://www.github.com/donkeyclip/motorcortex-subtitles/commit/b4b05afdca461818fc7e85fbb8502c6114328950))
+
 ### [3.0.4](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.0.3...v3.0.4) (2022-04-07)
 
 
