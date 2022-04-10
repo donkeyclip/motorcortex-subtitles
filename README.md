@@ -1,6 +1,6 @@
 # MotorCortex Subtitles
 
-[Subtitle](https://www.npmjs.com/package/subtitle) library as a MotorCortex Incident
+[parseSRT](https://www.npmjs.com/package/parse-srt) library as a MotorCortex Incident.
 
 ## Installation
 ```bash
@@ -15,7 +15,7 @@ import Subtitle from "@donkeyclip/motorcortex-subtitles";
 
 
 ## Key Concepts / Features
-MotorCortex Subtitles takes the capabilities of Subtitle library of parsing subtilte files. 
+MotorCortex Subtitles takes the capabilities of parseSRT library of parsing subtilte files. 
 The library exposes just one Incident with the name "ParseText" which can parse supported subtitle files and add them to your clip. The duration is auto calculated from your subtitles. The container params of the subtitles clip should be the same with the parent clip.
 
 ## Subtitle Formats supported
