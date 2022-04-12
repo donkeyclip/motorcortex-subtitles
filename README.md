@@ -28,7 +28,7 @@ This Plugin exposes just one Incident:
 - ParseText
 
 ## Subtitle Formats supported
-SRT or WebVTT
+SRT
 
 # Getting Started
 ## Installation
