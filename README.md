@@ -21,7 +21,7 @@
 
 # Intro / Features
 
-MotorCortex Subtitles takes the capabilities of the [parseSRT](https://www.npmjs.com/package/parse-srt) library of parsing subtitle files. 
+MotorCortex Subtitles takes the capabilities of the [parseSRT](https://www.npmjs.com/package/parse-srt) library for parsing subtitle files. 
 The `ParseText` Incident can parse supported subtitle files and add them to your clip. The duration is auto-calculated from your subtitles. 
 
 This Plugin exposes just one Incident:
