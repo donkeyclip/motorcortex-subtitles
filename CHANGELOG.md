@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.1.1](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.1.0...v3.1.1) (2022-05-05)
+
+
+### Bug Fixes
+
+* update README.md ([85ee700](https://www.github.com/donkeyclip/motorcortex-subtitles/commit/85ee70077b71ab60932011f31ce80e0e67cd1d6b))
+
 ## [3.1.0](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.0.4...v3.1.0) (2022-04-08)
 
 
