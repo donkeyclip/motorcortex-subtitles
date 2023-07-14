@@ -57,11 +57,12 @@ export class ParseText extends HTMLClip {
       align-items:${position};
       font-size:${this.attrs.fontSize || 12}px;
       color:${this.attrs.textColor || "white"};
+      box-shadow:${this.attrs.boxShadow || "none"};
       font-family: ${this.attrs.fontFamily || "'Ubuntu'"};
       width: 100%;
       height: 100%;
-
     }
+
     #subs-container{
       max-width:${this.attrs.maxWidth ? this.attrs.maxWidth + "px" : "100%"};
       text-align:center;
