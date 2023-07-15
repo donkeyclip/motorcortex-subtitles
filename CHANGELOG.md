@@ -1,5 +1,12 @@
 # Changelog
 
+### [3.1.3](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.1.2...v3.1.3) (2023-07-15)
+
+
+### Bug Fixes
+
+* change box shadow to text shadow ([be40d2f](https://www.github.com/donkeyclip/motorcortex-subtitles/commit/be40d2f940a8ba05d8ab2d77bcda1fbdfb43242d))
+
 ### [3.1.2](https://www.github.com/donkeyclip/motorcortex-subtitles/compare/v3.1.1...v3.1.2) (2023-07-14)
 
 
